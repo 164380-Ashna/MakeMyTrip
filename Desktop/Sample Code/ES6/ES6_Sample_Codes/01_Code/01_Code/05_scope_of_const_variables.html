@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+    	<title>Learning ECMAScript 6</title>
+    </head>
+    <body>
+      
+        <script type="module">
+            const a = 12; //accessible globally
+
+            function myFunction()
+            {
+              console.log(a);
+              
+              const b = 13; //accessible throughout function
+              
+              if(true)
+              {
+                const c = 14; //accessible throughout the "if" statement 
+                console.log(c);
+              }
+              
+              console.log(b); 
+            }
+
+            myFunction();
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+ <head>
+  <title>ImageMap Example</title>
+ </head>
+ <body>
+ <p>
+Click on one of the planets to know about it:
+</p>
+
+<img src="planets.gif" width="145" height="126" usemap="#planetmap">
+
+  <map id="planetmap" name="planetmap">
+
+    <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.html">
+
+    <area shape="circle" coords="90,58,3" alt="Mercury" href="mercury.html">
+
+    <area shape="circle" coords="124,58,8" alt="Venus" href="venus.html">
+
+  </map>
+</img>
+
+  <p><b>Note:</b> The "usemap" attribute in the img element refers to the "id" or "name" (browser dependant) attribute in the map element, therefore we have added both the "id" and "name" attributes to the map element.</p>
+
+
+ </body>
+</html>
