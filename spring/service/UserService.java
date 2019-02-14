@@ -1,11 +1,11 @@
 package com.project.spring.service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
 
 import com.project.spring.model.User;
 import com.project.spring.repository.UserRepository;
@@ -59,16 +59,6 @@ public class UserService {
 		return userList;
 
 	}
+
 	
-	public String validatate(String emailId, String password)
-	{
-		List<User> list= getAllUser();
-		
-		for(User user:list) {
-		if(emailId.equals(user.getEmailId() )&& password.equals(user.getPassword())) {
-		return "login Successful!!!";
-		}
-		}
-		return "login successful";		
-	}
-	}
+}

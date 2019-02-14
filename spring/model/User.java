@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "User")
 public class User {
 	
-	    @Id
+	 @Id
 	    private String emailId;
 	    private String password;
 	    private String passwordConfirm;
